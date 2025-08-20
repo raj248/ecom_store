@@ -5,12 +5,12 @@ import { IoClose } from "react-icons/io5";
 import { useQuery } from "@tanstack/react-query";
 
 //internal import
-import { pages } from "@utils/data";
-import Loading from "@components/preloader/Loading";
-import { SidebarContext } from "@context/SidebarContext";
-import CategoryServices from "@services/CategoryServices";
-import CategoryCard from "@components/category/CategoryCard";
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import { pages } from "../../utils/data";
+import Loading from "../../components/preloader/Loading";
+import { SidebarContext } from "../../context/SidebarContext";
+import CategoryServices from "../../services/CategoryServices";
+import CategoryCard from "../../components/category/CategoryCard";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
 
 const Category = () => {
   const { categoryDrawerOpen, closeCategoryDrawer } =

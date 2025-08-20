@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 //internal import
-import { ctaCardData } from "@utils/data";
+import { ctaCardData } from "../../utils/data";
 
 const Card = () => {
   return (

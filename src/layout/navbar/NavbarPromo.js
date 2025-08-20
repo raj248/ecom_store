@@ -2,7 +2,7 @@ import { Fragment, useState, useEffect, useContext } from "react";
 import Link from "next/link";
 import { Transition, Popover } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/outline";
-import SettingServices from "@services/SettingServices";
+import SettingServices from "../../services/SettingServices";
 import Cookies from "js-cookie";
 import {
   FiGift,
@@ -17,10 +17,10 @@ import {
 import { useQuery } from "@tanstack/react-query";
 
 //internal import
-import useGetSetting from "@hooks/useGetSetting";
-import Category from "@components/category/Category";
-import { SidebarContext } from "@context/SidebarContext";
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import useGetSetting from "../../hooks/useGetSetting";
+import Category from "../../components/category/Category";
+import { SidebarContext } from "../../context/SidebarContext";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
 import useTranslation from "next-translate/useTranslation";
 
 const NavbarPromo = () => {

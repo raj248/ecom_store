@@ -1,4 +1,5 @@
-import "@styles/custom.css";
+import "../styles/custom.css";
+import type { AppProps } from "next/app";
 import { CartProvider } from "react-use-cart";
 import { Elements } from "@stripe/react-stripe-js";
 import { PersistGate } from "redux-persist/integration/react";
@@ -12,13 +13,13 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 
 // Internal imports
-import store from "@redux/store";
-import getStripe from "@lib/stripe";
-import { handlePageView } from "@lib/analytics";
-import { UserProvider } from "@context/UserContext";
-import DefaultSeo from "@components/common/DefaultSeo";
-import { SidebarProvider } from "@context/SidebarContext";
-import SettingServices from "@services/SettingServices";
+import store from "../redux/store";
+import getStripe from "../lib/stripe";
+import { handlePageView } from "../lib/analytics";
+import { UserProvider } from "../context/UserContext";
+import DefaultSeo from "../components/common/DefaultSeo";
+import { SidebarProvider } from "../context/SidebarContext";
+import SettingServices from "../services/SettingServices";
 
 let persistor = persistStore(store);
 let stripePromise = getStripe();
@@ -32,7 +33,7 @@ const queryClient = new QueryClient({
   },
 });
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const [storeSetting, setStoreSetting] = useState(null);
 

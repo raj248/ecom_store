@@ -3,15 +3,15 @@ import { useForm } from "react-hook-form";
 import React, { useEffect, useState } from "react";
 
 //internal import
-import Label from "@components/form/Label";
-import Error from "@components/form/Error";
-import Dashboard from "@pages/user/dashboard";
-import InputArea from "@components/form/InputArea";
-import useGetSetting from "@hooks/useGetSetting";
-import CustomerServices from "@services/CustomerServices";
-import Uploader from "@components/image-uploader/Uploader";
-import { notifySuccess, notifyError } from "@utils/toast";
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import Label from "../components/form/Label";
+import Error from "../components/form/Error";
+import Dashboard from "../pages/user/dashboard";
+import InputArea from "../components/form/InputArea";
+import useGetSetting from "../hooks/useGetSetting";
+import CustomerServices from "../services/CustomerServices";
+import Uploader from "../components/image-uploader/Uploader";
+import { notifySuccess, notifyError } from "../utils/toast";
+import useUtilsFunction from "../hooks/useUtilsFunction";
 
 const UpdateProfile = () => {
   const [imageUrl, setImageUrl] = useState("");

@@ -1,21 +1,21 @@
-import { SidebarContext } from "@context/SidebarContext";
+import { SidebarContext } from "../context/SidebarContext";
 import { useContext, useEffect } from "react";
 import { useRouter } from "next/router";
 
 //internal import
-import Layout from "@layout/Layout";
-import Banner from "@components/banner/Banner";
-import useGetSetting from "@hooks/useGetSetting";
-import CardTwo from "@components/cta-card/CardTwo";
-import OfferCard from "@components/offer/OfferCard";
-import StickyCart from "@components/cart/StickyCart";
-import Loading from "@components/preloader/Loading";
-import ProductServices from "@services/ProductServices";
-import ProductCard from "@components/product/ProductCard";
-import MainCarousel from "@components/carousel/MainCarousel";
-import FeatureCategory from "@components/category/FeatureCategory";
-import AttributeServices from "@services/AttributeServices";
-import CMSkeleton from "@components/preloader/CMSkeleton";
+import Layout from "../layout/Layout";
+import Banner from "../components/banner/Banner";
+import useGetSetting from "../hooks/useGetSetting";
+import CardTwo from "../components/cta-card/CardTwo";
+import OfferCard from "../components/offer/OfferCard";
+import StickyCart from "../components/cart/StickyCart";
+import Loading from "../components/preloader/Loading";
+import ProductServices from "../services/ProductServices";
+import ProductCard from "../components/product/ProductCard";
+import MainCarousel from "../components/carousel/MainCarousel";
+import FeatureCategory from "../components/category/FeatureCategory";
+import AttributeServices from "../services/AttributeServices";
+import CMSkeleton from "../components/preloader/CMSkeleton";
 
 const Home = ({ popularProducts, discountProducts, attributes }) => {
   const router = useRouter();

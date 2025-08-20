@@ -3,8 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 //internal import
-import useGetSetting from "@hooks/useGetSetting";
-import CMSkeleton from "@components/preloader/CMSkeleton";
+import useGetSetting from "../../hooks/useGetSetting";
+import CMSkeleton from "../../components/preloader/CMSkeleton";
 
 const FooterTop = () => {
   const { storeCustomizationSetting, loading, error } = useGetSetting();

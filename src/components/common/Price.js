@@ -1,4 +1,4 @@
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
 
 const Price = ({ product, price, card, currency, originalPrice }) => {
   // console.log("price", price, "originalPrice", originalPrice, "card", card);

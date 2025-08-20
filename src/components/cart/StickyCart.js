@@ -4,8 +4,8 @@ import { IoBagHandleOutline } from "react-icons/io5";
 import { useCart } from "react-use-cart";
 
 //internal import
-import useGetSetting from "@hooks/useGetSetting";
-import { SidebarContext } from "@context/SidebarContext";
+import useGetSetting from "../../hooks/useGetSetting";
+import { SidebarContext } from "../../context/SidebarContext";
 
 const StickyCart = () => {
   const { totalItems, cartTotal } = useCart();

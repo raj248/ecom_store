@@ -3,8 +3,8 @@ import { useSession } from "next-auth/react";
 import React, { createContext, useEffect, useReducer } from "react";
 
 //internal imports
-import { setToken } from "@services/httpServices";
-import LoadingForSession from "@components/preloader/LoadingForSession";
+import { setToken } from "../services/httpServices";
+import LoadingForSession from "../components/preloader/LoadingForSession";
 
 export const UserContext = createContext();
 

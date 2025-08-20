@@ -1,4 +1,4 @@
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
 import React from "react";
 
 const OrderTable = ({ data, currency }) => {

@@ -18,7 +18,7 @@
     "@paypal/react-paypal-js": "^7.8.1",
     "@react-oauth/google": "^0.11.1",
     "@react-pdf/renderer": "^3.1.14",
-    "@reduxjs/toolkit": "^1.9.7",
+    "../reduxjs/toolkit": "^1.9.7",
     "@rooks/use-sessionstorage": "^4.11.2",
     "@stripe/react-stripe-js": "^1.10.0",
     "@stripe/stripe-js": "^1.20.3",
@@ -79,12 +79,15 @@
   "devDependencies": {
     "@tailwindcss/forms": "^0.4.0",
     "@tailwindcss/typography": "^0.5.1",
+    "@types/node": "^24.3.0",
+    "@types/react": "^19.1.10",
     "autoprefixer": "10.4.5",
     "eslint": "7.30.0",
     "eslint-config-next": "11.0.1",
     "eslint-config-prettier": "^8.3.0",
     "next-translate-plugin": "^2.6.2",
     "postcss": "^8.4.6",
-    "tailwindcss": "^3.4.3"
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.9.2"
   }
 }

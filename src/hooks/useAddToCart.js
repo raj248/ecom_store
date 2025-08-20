@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useCart } from "react-use-cart";
 
-import { notifyError, notifySuccess } from "@utils/toast";
+import { notifyError, notifySuccess } from "../utils/toast";
 
 const useAddToCart = () => {
   const [item, setItem] = useState(1);

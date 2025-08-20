@@ -2,7 +2,7 @@ import React from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import parse from "html-react-parser";
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
 
 const CMSkeleton = ({
   html,

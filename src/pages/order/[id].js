@@ -7,13 +7,13 @@ import { useQuery } from "@tanstack/react-query";
 
 //internal import
 
-import Layout from "@layout/Layout";
-import useGetSetting from "@hooks/useGetSetting";
-import Invoice from "@components/invoice/Invoice";
-import Loading from "@components/preloader/Loading";
-import OrderServices from "@services/OrderServices";
-import useUtilsFunction from "@hooks/useUtilsFunction";
-import InvoiceForDownload from "@components/invoice/InvoiceForDownload";
+import Layout from "../layout/Layout";
+import useGetSetting from "../hooks/useGetSetting";
+import Invoice from "../components/invoice/Invoice";
+import Loading from "../components/preloader/Loading";
+import OrderServices from "../services/OrderServices";
+import useUtilsFunction from "../hooks/useUtilsFunction";
+import InvoiceForDownload from "../components/invoice/InvoiceForDownload";
 
 const Order = ({ params }) => {
   const printRef = useRef();

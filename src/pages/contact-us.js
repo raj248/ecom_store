@@ -5,15 +5,15 @@ import useTranslation from "next-translate/useTranslation";
 import { FiMail, FiMapPin, FiBell } from "react-icons/fi";
 
 //internal import
-import Layout from "@layout/Layout";
-import Label from "@components/form/Label";
-import Error from "@components/form/Error";
-import { notifySuccess } from "@utils/toast";
-import useGetSetting from "@hooks/useGetSetting";
-import InputArea from "@components/form/InputArea";
-import PageHeader from "@components/header/PageHeader";
-import CMSkeleton from "@components/preloader/CMSkeleton";
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import Layout from "../layout/Layout";
+import Label from "../components/form/Label";
+import Error from "../components/form/Error";
+import { notifySuccess } from "../utils/toast";
+import useGetSetting from "../hooks/useGetSetting";
+import InputArea from "../components/form/InputArea";
+import PageHeader from "../components/header/PageHeader";
+import CMSkeleton from "../components/preloader/CMSkeleton";
+import useUtilsFunction from "../hooks/useUtilsFunction";
 
 const ContactUs = () => {
   const { t } = useTranslation();

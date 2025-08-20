@@ -9,14 +9,14 @@ import { useQuery } from "@tanstack/react-query";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 
 //internal import
-import { getUserSession } from "@lib/auth";
-import { UserContext } from "@context/UserContext";
-import OrderServices from "@services/OrderServices";
+import { getUserSession } from "../lib/auth";
+import { UserContext } from "../context/UserContext";
+import OrderServices from "../services/OrderServices";
 import useUtilsFunction from "./useUtilsFunction";
-import CouponServices from "@services/CouponServices";
-import { notifyError, notifySuccess } from "@utils/toast";
-import CustomerServices from "@services/CustomerServices";
-import NotificationServices from "@services/NotificationServices";
+import CouponServices from "../services/CouponServices";
+import { notifyError, notifySuccess } from "../utils/toast";
+import CustomerServices from "../services/CustomerServices";
+import NotificationServices from "../services/NotificationServices";
 
 const useCheckoutSubmit = (storeSetting) => {
   const { dispatch } = useContext(UserContext);

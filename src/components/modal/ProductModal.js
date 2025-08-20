@@ -6,17 +6,17 @@ import { useContext, useEffect, useState } from "react";
 import { FiMinus, FiPlus } from "react-icons/fi";
 
 //internal import
-import Price from "@components/common/Price";
-import Stock from "@components/common/Stock";
-import Tags from "@components/common/Tags";
-import { notifyError } from "@utils/toast";
-import useAddToCart from "@hooks/useAddToCart";
-import MainModal from "@components/modal/MainModal";
-import Discount from "@components/common/Discount";
-import VariantList from "@components/variants/VariantList";
-import { SidebarContext } from "@context/SidebarContext";
-import useUtilsFunction from "@hooks/useUtilsFunction";
-import { handleLogEvent } from "src/lib/analytics";
+import Price from "../../components/common/Price";
+import Stock from "../../components/common/Stock";
+import Tags from "../../components/common/Tags";
+import { notifyError } from "../../utils/toast";
+import useAddToCart from "../../hooks/useAddToCart";
+import MainModal from "../../components/modal/MainModal";
+import Discount from "../../components/common/Discount";
+import VariantList from "../../components/variants/VariantList";
+import { SidebarContext } from "../../context/SidebarContext";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
+import { handleLogEvent } from "../../lib/analytics";
 
 const ProductModal = ({
   modalOpen,

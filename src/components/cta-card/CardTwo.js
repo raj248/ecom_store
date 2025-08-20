@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 //internal import
-import useGetSetting from "@hooks/useGetSetting";
-import CMSkeleton from "@components/preloader/CMSkeleton";
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import useGetSetting from "../../hooks/useGetSetting";
+import CMSkeleton from "../../components/preloader/CMSkeleton";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
 
 const CardTwo = () => {
   const { storeCustomizationSetting, error, loading } = useGetSetting();

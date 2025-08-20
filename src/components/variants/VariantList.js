@@ -1,4 +1,4 @@
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
 
 const VariantList = ({
   att,

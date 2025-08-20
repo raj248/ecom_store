@@ -14,18 +14,18 @@ import useTranslation from "next-translate/useTranslation";
 
 //internal import
 
-import Layout from "@layout/Layout";
-import Label from "@components/form/Label";
-import Error from "@components/form/Error";
-import CartItem from "@components/cart/CartItem";
-import InputArea from "@components/form/InputArea";
-import useGetSetting from "@hooks/useGetSetting";
-import InputShipping from "@components/form/InputShipping";
-import InputPayment from "@components/form/InputPayment";
-import useCheckoutSubmit from "@hooks/useCheckoutSubmit";
-import useUtilsFunction from "@hooks/useUtilsFunction";
-import SettingServices from "@services/SettingServices";
-import SwitchToggle from "@components/form/SwitchToggle";
+import Layout from "../layout/Layout";
+import Label from "../components/form/Label";
+import Error from "../components/form/Error";
+import CartItem from "../components/cart/CartItem";
+import InputArea from "../components/form/InputArea";
+import useGetSetting from "../hooks/useGetSetting";
+import InputShipping from "../components/form/InputShipping";
+import InputPayment from "../components/form/InputPayment";
+import useCheckoutSubmit from "../hooks/useCheckoutSubmit";
+import useUtilsFunction from "../hooks/useUtilsFunction";
+import SettingServices from "../services/SettingServices";
+import SwitchToggle from "../components/form/SwitchToggle";
 
 const Checkout = () => {
   const { t } = useTranslation();

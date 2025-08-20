@@ -5,14 +5,14 @@ import ReactPaginate from "react-paginate";
 import { useQuery } from "@tanstack/react-query";
 
 //internal import
-import Dashboard from "@pages/user/dashboard";
-import useGetSetting from "@hooks/useGetSetting";
-import OrderServices from "@services/OrderServices";
-import Loading from "@components/preloader/Loading";
-import useUtilsFunction from "@hooks/useUtilsFunction";
-import OrderHistory from "@components/order/OrderHistory";
-import { SidebarContext } from "@context/SidebarContext";
-import CMSkeletonTwo from "@components/preloader/CMSkeletonTwo";
+import Dashboard from "../pages/user/dashboard";
+import useGetSetting from "../hooks/useGetSetting";
+import OrderServices from "../services/OrderServices";
+import Loading from "../components/preloader/Loading";
+import useUtilsFunction from "../hooks/useUtilsFunction";
+import OrderHistory from "../components/order/OrderHistory";
+import { SidebarContext } from "../context/SidebarContext";
+import CMSkeletonTwo from "../components/preloader/CMSkeletonTwo";
 
 const MyOrders = () => {
   const { currentPage, handleChangePage, isLoading, setIsLoading } =

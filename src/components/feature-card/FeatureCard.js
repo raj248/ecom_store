@@ -2,8 +2,8 @@ import React from "react";
 import { FiCreditCard, FiGift, FiPhoneCall, FiTruck } from "react-icons/fi";
 
 //internal import
-import useGetSetting from "@hooks/useGetSetting";
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import useGetSetting from "../../hooks/useGetSetting";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
 
 const FeatureCard = () => {
   const { storeCustomizationSetting } = useGetSetting();

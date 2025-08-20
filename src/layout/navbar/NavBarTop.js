@@ -10,9 +10,9 @@ import { jwtDecode } from "jwt-decode";
 import { useEffect } from "react";
 
 //internal import
-import { getUserSession } from "@lib/auth";
-import useGetSetting from "@hooks/useGetSetting";
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import { getUserSession } from "../../lib/auth";
+import useGetSetting from "../../hooks/useGetSetting";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
 
 const NavBarTop = () => {
   const userInfo = getUserSession();

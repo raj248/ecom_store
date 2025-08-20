@@ -8,8 +8,8 @@ import {
 } from "react-icons/io5";
 
 //internal import
-import { SidebarContext } from "@context/SidebarContext";
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import { SidebarContext } from "../../context/SidebarContext";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
 
 const CategoryCard = ({ title, icon, nested, id }) => {
   const router = useRouter();

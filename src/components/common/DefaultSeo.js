@@ -2,7 +2,7 @@ import React from "react";
 import { DefaultSeo as NextSeo } from "next-seo";
 
 //internal import
-import useGetSetting from "@hooks/useGetSetting";
+import useGetSetting from "../../hooks/useGetSetting";
 
 const DefaultSeo = () => {
   const { globalSetting } = useGetSetting();

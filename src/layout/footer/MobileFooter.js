@@ -6,9 +6,9 @@ import { useCart } from "react-use-cart";
 import { FiHome, FiUser, FiShoppingCart, FiAlignLeft } from "react-icons/fi";
 
 //internal imports
-import { getUserSession } from "@lib/auth";
-import { SidebarContext } from "@context/SidebarContext";
-import CategoryDrawer from "@components/drawer/CategoryDrawer";
+import { getUserSession } from "../../lib/auth";
+import { SidebarContext } from "../../context/SidebarContext";
+import CategoryDrawer from "../../components/drawer/CategoryDrawer";
 
 const MobileFooter = () => {
   const [modalOpen, setModalOpen] = useState(false);

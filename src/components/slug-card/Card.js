@@ -10,8 +10,8 @@ import {
 } from "react-icons/fi";
 
 //internal import
-import useGetSetting from "@hooks/useGetSetting";
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import useGetSetting from "../../hooks/useGetSetting";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
 
 const Card = () => {
   const { storeCustomizationSetting } = useGetSetting();

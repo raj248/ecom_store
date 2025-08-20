@@ -9,8 +9,8 @@ import "swiper/css/navigation";
 
 //internal import
 
-import useGetSetting from "@hooks/useGetSetting";
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import useGetSetting from "../../hooks/useGetSetting";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
 
 const MainCarousel = () => {
   const { storeCustomizationSetting } = useGetSetting();

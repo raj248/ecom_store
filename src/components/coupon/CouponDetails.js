@@ -3,7 +3,7 @@ import Image from "next/image";
 import dayjs from "dayjs";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-import OfferTimer from "@components/coupon/OfferTimer";
+import OfferTimer from "../../components/coupon/OfferTimer";
 
 const CouponDetails = ({ coupon }) => {
   const [copiedCode, setCopiedCode] = useState("");

@@ -5,10 +5,10 @@ import { useQuery } from "@tanstack/react-query";
 import { IoChevronForwardSharp } from "react-icons/io5";
 
 //internal import
-import CategoryServices from "@services/CategoryServices";
-import CMSkeleton from "@components/preloader/CMSkeleton";
-import { SidebarContext } from "@context/SidebarContext";
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import CategoryServices from "../../services/CategoryServices";
+import CMSkeleton from "../../components/preloader/CMSkeleton";
+import { SidebarContext } from "../../context/SidebarContext";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
 
 const FeatureCategory = () => {
   const router = useRouter();

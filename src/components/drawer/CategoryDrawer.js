@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import dynamic from "next/dynamic";
 import Drawer from "rc-drawer";
 
-import Category from "@components/category/Category";
-import { SidebarContext } from "@context/SidebarContext";
+import Category from "../../components/category/Category";
+import { SidebarContext } from "../../context/SidebarContext";
 
 const CategoryDrawer = () => {
   const { categoryDrawerOpen, closeCategoryDrawer } =

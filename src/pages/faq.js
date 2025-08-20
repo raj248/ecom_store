@@ -4,10 +4,10 @@ import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/solid";
 
 //internal import
-import Layout from "@layout/Layout";
-import useGetSetting from "@hooks/useGetSetting";
-import PageHeader from "@components/header/PageHeader";
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import Layout from "../layout/Layout";
+import useGetSetting from "../hooks/useGetSetting";
+import PageHeader from "../components/header/PageHeader";
+import useUtilsFunction from "../hooks/useUtilsFunction";
 
 const Faq = () => {
   const { storeCustomizationSetting } = useGetSetting();

@@ -1,4 +1,4 @@
-import SettingServices from "@services/SettingServices";
+import SettingServices from "../services/SettingServices";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {

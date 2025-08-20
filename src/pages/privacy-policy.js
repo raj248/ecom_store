@@ -1,11 +1,11 @@
 import React from "react";
 
 //internal import
-import Layout from "@layout/Layout";
-import useGetSetting from "@hooks/useGetSetting";
-import PageHeader from "@components/header/PageHeader";
-import CMSkeleton from "@components/preloader/CMSkeleton";
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import Layout from "../layout/Layout";
+import useGetSetting from "../hooks/useGetSetting";
+import PageHeader from "../components/header/PageHeader";
+import CMSkeleton from "../components/preloader/CMSkeleton";
+import useUtilsFunction from "../hooks/useUtilsFunction";
 
 const PrivacyPolicy = () => {
   const { storeCustomizationSetting, loading, error } = useGetSetting();

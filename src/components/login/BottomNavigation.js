@@ -4,7 +4,7 @@ import { signIn } from "next-auth/react";
 import { useQuery } from "@tanstack/react-query";
 
 //internal imports
-import SettingServices from "@services/SettingServices";
+import SettingServices from "../../services/SettingServices";
 
 const BottomNavigation = ({ or, route, desc, pageName, loginTitle }) => {
   const buttonStyles = `

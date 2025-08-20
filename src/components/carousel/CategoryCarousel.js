@@ -10,10 +10,10 @@ import { Autoplay, Controller, Navigation, Pagination } from "swiper/modules";
 import { useQuery } from "@tanstack/react-query";
 
 //internal import
-import { SidebarContext } from "@context/SidebarContext";
-import CategoryServices from "@services/CategoryServices";
-import useUtilsFunction from "@hooks/useUtilsFunction";
-import Loading from "@components/preloader/Loading";
+import { SidebarContext } from "../../context/SidebarContext";
+import CategoryServices from "../../services/CategoryServices";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
+import Loading from "../../components/preloader/Loading";
 
 const CategoryCarousel = () => {
   const router = useRouter();

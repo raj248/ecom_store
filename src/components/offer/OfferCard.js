@@ -1,9 +1,9 @@
 import React from "react";
 
 //internal import
-import Coupon from "@components/coupon/Coupon";
-import useGetSetting from "@hooks/useGetSetting";
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import Coupon from "../../components/coupon/Coupon";
+import useGetSetting from "../../hooks/useGetSetting";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
 
 const OfferCard = () => {
   const { storeCustomizationSetting } = useGetSetting();

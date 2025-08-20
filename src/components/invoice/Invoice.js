@@ -3,8 +3,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 //internal import
-import OrderTable from "@components/order/OrderTable";
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import OrderTable from "../../components/order/OrderTable";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
 
 const Invoice = ({ data, printRef, globalSetting, currency }) => {
   // console.log('invoice data',data)

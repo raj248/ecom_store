@@ -3,7 +3,7 @@ import { useCart } from "react-use-cart";
 import { FiPlus, FiMinus } from "react-icons/fi";
 
 //internal imports
-import useGetSetting from "@hooks/useGetSetting";
+import useGetSetting from "../../hooks/useGetSetting";
 
 const CheckoutCard = ({ item }) => {
   const { updateItemQuantity } = useCart();

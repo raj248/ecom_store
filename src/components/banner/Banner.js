@@ -2,8 +2,8 @@ import Link from "next/link";
 import React from "react";
 
 //internal import
-import useGetSetting from "@hooks/useGetSetting";
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import useGetSetting from "../../hooks/useGetSetting";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
 
 const Banner = () => {
   const { storeCustomizationSetting } = useGetSetting();

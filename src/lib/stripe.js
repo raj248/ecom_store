@@ -2,7 +2,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import { QueryClient } from "@tanstack/react-query";
 
 //internal imports
-import SettingServices from "@services/SettingServices";
+import SettingServices from "../services/SettingServices";
 
 let stripePromise;
 const queryClient = new QueryClient({

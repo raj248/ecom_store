@@ -4,8 +4,8 @@ import { useCart } from "react-use-cart";
 import { FiPlus, FiMinus, FiTrash2 } from "react-icons/fi";
 
 //internal import
-import useAddToCart from "@hooks/useAddToCart";
-import { SidebarContext } from "@context/SidebarContext";
+import useAddToCart from "../../hooks/useAddToCart";
+import { SidebarContext } from "../../context/SidebarContext";
 
 const CartItem = ({ item, currency }) => {
   const { updateItemQuantity, removeItem } = useCart();

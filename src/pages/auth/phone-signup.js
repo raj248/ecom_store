@@ -4,10 +4,10 @@ import phone from "phone";
 import { Controller } from "react-hook-form";
 
 //internal import
-import Layout from "@layout/Layout";
-import Label from "@components/form/Label";
-import useLoginSubmit from "@hooks/useLoginSubmit";
-import BottomNavigation from "@components/login/BottomNavigation";
+import Layout from "../layout/Layout";
+import Label from "../components/form/Label";
+import useLoginSubmit from "../hooks/useLoginSubmit";
+import BottomNavigation from "../components/login/BottomNavigation";
 
 const PhoneSignup = () => {
   const { errors, control, loading, handleSubmit, submitHandler } =

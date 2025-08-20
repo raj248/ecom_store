@@ -3,15 +3,15 @@ import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
 
 //internal import
-import Layout from "@layout/Layout";
-import useFilter from "@hooks/useFilter";
-import Card from "@components/cta-card/Card";
-import Loading from "@components/preloader/Loading";
-import ProductServices from "@services/ProductServices";
-import ProductCard from "@components/product/ProductCard";
-import { SidebarContext } from "@context/SidebarContext";
-import AttributeServices from "@services/AttributeServices";
-import CategoryCarousel from "@components/carousel/CategoryCarousel";
+import Layout from "../layout/Layout";
+import useFilter from "../hooks/useFilter";
+import Card from "../components/cta-card/Card";
+import Loading from "../components/preloader/Loading";
+import ProductServices from "../services/ProductServices";
+import ProductCard from "../components/product/ProductCard";
+import { SidebarContext } from "../context/SidebarContext";
+import AttributeServices from "../services/AttributeServices";
+import CategoryCarousel from "../components/carousel/CategoryCarousel";
 
 const Search = ({ products, attributes }) => {
   const { t } = useTranslation();

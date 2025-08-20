@@ -6,16 +6,16 @@ import { useCart } from "react-use-cart";
 
 //internal import
 
-import Price from "@components/common/Price";
-import Stock from "@components/common/Stock";
-import { notifyError } from "@utils/toast";
-import useAddToCart from "@hooks/useAddToCart";
-import useGetSetting from "@hooks/useGetSetting";
-import Discount from "@components/common/Discount";
-import useUtilsFunction from "@hooks/useUtilsFunction";
-import ProductModal from "@components/modal/ProductModal";
-import ImageWithFallback from "@components/common/ImageWithFallBack";
-import { handleLogEvent } from "src/lib/analytics";
+import Price from "../../components/common/Price";
+import Stock from "../../components/common/Stock";
+import { notifyError } from "../../utils/toast";
+import useAddToCart from "../../hooks/useAddToCart";
+import useGetSetting from "../../hooks/useGetSetting";
+import Discount from "../../components/common/Discount";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
+import ProductModal from "../../components/modal/ProductModal";
+import ImageWithFallback from "../../components/common/ImageWithFallBack";
+import { handleLogEvent } from "../../lib/analytics";
 
 const ProductCard = ({ product, attributes }) => {
   const [modalOpen, setModalOpen] = useState(false);

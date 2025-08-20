@@ -6,8 +6,8 @@ import { signIn } from "next-auth/react";
 
 //internal import
 
-import { notifyError, notifySuccess } from "@utils/toast";
-import CustomerServices from "@services/CustomerServices";
+import { notifyError, notifySuccess } from "../utils/toast";
+import CustomerServices from "../services/CustomerServices";
 
 const useLoginSubmit = () => {
   const router = useRouter();

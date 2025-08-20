@@ -1,5 +1,5 @@
 import React from "react";
-import Label from "@components/form/Label";
+import Label from "../../components/form/Label";
 
 const InputArea = ({
   name,

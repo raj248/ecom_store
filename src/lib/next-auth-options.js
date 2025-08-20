@@ -5,8 +5,8 @@ import GitHub from "next-auth/providers/github";
 import Facebook from "next-auth/providers/facebook";
 import Credentials from "next-auth/providers/credentials";
 
-import SettingServices from "@services/SettingServices";
-import CustomerServices from "@services/CustomerServices";
+import SettingServices from "../services/SettingServices";
+import CustomerServices from "../services/CustomerServices";
 
 const queryClient = new QueryClient({
   defaultOptions: {

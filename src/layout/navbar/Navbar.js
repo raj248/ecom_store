@@ -9,12 +9,12 @@ import { FiShoppingCart, FiUser, FiBell } from "react-icons/fi";
 import useTranslation from "next-translate/useTranslation";
 
 //internal import
-import { getUserSession } from "@lib/auth";
-import useGetSetting from "@hooks/useGetSetting";
-import { handleLogEvent } from "src/lib/analytics";
-import NavbarPromo from "@layout/navbar/NavbarPromo";
-import CartDrawer from "@components/drawer/CartDrawer";
-import { SidebarContext } from "@context/SidebarContext";
+import { getUserSession } from "../../lib/auth";
+import useGetSetting from "../../hooks/useGetSetting";
+import { handleLogEvent } from "../../lib/analytics";
+import NavbarPromo from "./NavbarPromo";
+import CartDrawer from "../../components/drawer/CartDrawer";
+import { SidebarContext } from "../../context/SidebarContext";
 
 const Navbar = () => {
   const { t, lang } = useTranslation("common");

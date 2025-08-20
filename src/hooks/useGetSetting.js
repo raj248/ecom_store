@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 
 //internal import
-import SettingServices from "@services/SettingServices";
-import { storeCustomization } from "@utils/storeCustomizationSetting";
+import SettingServices from "../services/SettingServices";
+import { storeCustomization } from "../utils/storeCustomizationSetting";
 
 const useGetSetting = () => {
   const lang = Cookies.get("_lang");

@@ -11,10 +11,10 @@ import {
 } from "react-share";
 
 //internal import
-import { getUserSession } from "@lib/auth";
-import useGetSetting from "@hooks/useGetSetting";
-import CMSkeleton from "@components/preloader/CMSkeleton";
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import { getUserSession } from "../../lib/auth";
+import useGetSetting from "../../hooks/useGetSetting";
+import CMSkeleton from "../../components/preloader/CMSkeleton";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
 
 const Footer = () => {
   const { t } = useTranslation();

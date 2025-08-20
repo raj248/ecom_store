@@ -1,4 +1,4 @@
-import useUtilsFunction from "@hooks/useUtilsFunction";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
 
 const Discount = ({ discount, product, slug, modal }) => {
   const { getNumber } = useUtilsFunction();

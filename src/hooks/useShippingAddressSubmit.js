@@ -1,13 +1,13 @@
-import { notifyError, notifySuccess } from "@utils/toast";
+import { notifyError, notifySuccess } from "../utils/toast";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
 
 //internal import
-import { getUserSession } from "@lib/auth";
-import { countries } from "@utils/countries";
-import CustomerServices from "@services/CustomerServices";
+import { getUserSession } from "../lib/auth";
+import { countries } from "../utils/countries";
+import CustomerServices from "../services/CustomerServices";
 
 const useShippingAddressSubmit = (id) => {
   const router = useRouter();

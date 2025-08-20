@@ -5,10 +5,10 @@ import { useQuery } from "@tanstack/react-query";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 //internal import
-import CouponServices from "@services/CouponServices";
-import OfferTimer from "@components/coupon/OfferTimer";
-import useUtilsFunction from "@hooks/useUtilsFunction";
-import CMSkeletonTwo from "@components/preloader/CMSkeletonTwo";
+import CouponServices from "../../services/CouponServices";
+import OfferTimer from "../../components/coupon/OfferTimer";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
+import CMSkeletonTwo from "../../components/preloader/CMSkeletonTwo";
 
 const Coupon = ({ couponInHome }) => {
   const [copiedCode, setCopiedCode] = useState("");
