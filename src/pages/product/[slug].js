@@ -18,22 +18,22 @@ import {
 } from "react-share";
 //internal import
 
-import Price from "../components/common/Price";
-import Stock from "../components/common/Stock";
-import Tags from "../components/common/Tags";
-import Layout from "../layout/Layout";
-import { notifyError } from "../utils/toast";
-import Card from "../components/slug-card/Card";
-import useAddToCart from "../hooks/useAddToCart";
-import Loading from "../components/preloader/Loading";
-import ProductCard from "../components/product/ProductCard";
-import VariantList from "../components/variants/VariantList";
-import { SidebarContext } from "../context/SidebarContext";
-import AttributeServices from "../services/AttributeServices";
-import ProductServices from "../services/ProductServices";
-import useUtilsFunction from "../hooks/useUtilsFunction";
-import Discount from "../components/common/Discount";
-import ImageCarousel from "../components/carousel/ImageCarousel";
+import Price from "../../components/common/Price";
+import Stock from "../../components/common/Stock";
+import Tags from "../../components/common/Tags";
+import Layout from "../../layout/Layout";
+import { notifyError } from "../../utils/toast";
+import Card from "../../components/slug-card/Card";
+import useAddToCart from "../../hooks/useAddToCart";
+import Loading from "../../components/preloader/Loading";
+import ProductCard from "../../components/product/ProductCard";
+import VariantList from "../../components/variants/VariantList";
+import { SidebarContext } from "../../context/SidebarContext";
+import AttributeServices from "../../services/AttributeServices";
+import ProductServices from "../../services/ProductServices";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
+import Discount from "../../components/common/Discount";
+import ImageCarousel from "../../components/carousel/ImageCarousel";
 
 const ProductScreen = ({ product, attributes, relatedProducts }) => {
   const router = useRouter();
