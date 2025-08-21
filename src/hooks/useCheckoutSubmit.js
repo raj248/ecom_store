@@ -135,7 +135,7 @@ const useCheckoutSubmit = (storeSetting) => {
         user_info: userDetails,
         shippingOption: data.shippingOption,
         paymentMethod: data.paymentMethod,
-        status: "Pending",
+        status: "pending",
         cart: items,
         subTotal: cartTotal,
         shippingCost: shippingCost,
