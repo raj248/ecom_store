@@ -6,10 +6,10 @@ import { FiLock, FiMail } from "react-icons/fi";
 import { ToastContainer } from "react-toastify";
 
 //internal import
-import Error from "../components/form/Error";
-import InputArea from "../components/form/InputArea";
-import CustomerServices from "../services/CustomerServices";
-import { notifyError, notifySuccess } from "../utils/toast";
+import Error from "../../../components/form/Error";
+import InputArea from "../../../components/form/InputArea";
+import CustomerServices from "../../../services/CustomerServices";
+import { notifyError, notifySuccess } from "../../../utils/toast";
 
 const ForgetPassword = () => {
   const [loading, setLoading] = useState(false);
