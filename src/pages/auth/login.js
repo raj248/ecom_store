@@ -2,11 +2,11 @@ import Link from "next/link";
 import { FiLock, FiMail } from "react-icons/fi";
 
 //internal  import
-import Layout from "../layout/Layout";
-import Error from "../components/form/Error";
-import useLoginSubmit from "../hooks/useLoginSubmit";
-import InputArea from "../components/form/InputArea";
-import BottomNavigation from "../components/login/BottomNavigation";
+import Layout from "../../layout/Layout";
+import Error from "../../components/form/Error";
+import useLoginSubmit from "../../hooks/useLoginSubmit";
+import InputArea from "../../components/form/InputArea";
+import BottomNavigation from "../../components/login/BottomNavigation";
 
 const Login = () => {
   const { handleSubmit, submitHandler, register, errors, loading } =

@@ -2,14 +2,14 @@ import React, { useContext } from "react";
 import { IoBagHandle } from "react-icons/io5";
 import ReactPaginate from "react-paginate";
 import Link from "next/link";
-import { SidebarContext } from "../context/SidebarContext";
+import { SidebarContext } from "../../context/SidebarContext";
 
 //internal import
 
-import useGetSetting from "../hooks/useGetSetting";
-import useUtilsFunction from "../hooks/useUtilsFunction";
-import OrderHistory from "../components/order/OrderHistory";
-import CMSkeletonTwo from "../components/preloader/CMSkeletonTwo";
+import useGetSetting from "../../hooks/useGetSetting";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
+import OrderHistory from "../../components/order/OrderHistory";
+import CMSkeletonTwo from "../../components/preloader/CMSkeletonTwo";
 
 const RecentOrder = ({ data, loading, error }) => {
   const { handleChangePage, currentPage } = useContext(SidebarContext);

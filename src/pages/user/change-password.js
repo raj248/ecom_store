@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 
 //internal import
-import { getUserSession } from "../lib/auth";
-import Error from "../components/form/Error";
-import Dashboard from "../pages/user/dashboard";
-import InputArea from "../components/form/InputArea";
-import useGetSetting from "../hooks/useGetSetting";
-import CustomerServices from "../services/CustomerServices";
-import { notifyError, notifySuccess } from "../utils/toast";
-import useUtilsFunction from "../hooks/useUtilsFunction";
+import { getUserSession } from "../../lib/auth";
+import Error from "../../components/form/Error";
+import Dashboard from "../../pages/user/dashboard";
+import InputArea from "../../components/form/InputArea";
+import useGetSetting from "../../hooks/useGetSetting";
+import CustomerServices from "../../services/CustomerServices";
+import { notifyError, notifySuccess } from "../../utils/toast";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
 
 const ChangePassword = () => {
   const {

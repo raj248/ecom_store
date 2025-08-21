@@ -4,10 +4,10 @@ import { FiPlus } from "react-icons/fi";
 import { useQuery } from "@tanstack/react-query";
 
 //internal imports
-import { getUserSession } from "../lib/auth";
-import Dashboard from "../pages/user/dashboard";
-import Error from "../components/form/Error";
-import CustomerServices from "../services/CustomerServices";
+import { getUserSession } from "../../lib/auth";
+import Dashboard from "../../pages/user/dashboard";
+import Error from "../../components/form/Error";
+import CustomerServices from "../../services/CustomerServices";
 
 const MyAccount = () => {
   const userInfo = getUserSession();

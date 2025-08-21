@@ -5,9 +5,9 @@ import { useMutation } from "@tanstack/react-query";
 import { IoCheckmarkCircle, IoCloseCircle } from "react-icons/io5";
 
 //internal import
-import { notifySuccess } from "../utils/toast";
-import Loading from "../components/preloader/Loading";
-import CustomerServices from "../services/CustomerServices";
+import { notifySuccess } from "../../utils/toast";
+import Loading from "../../components/preloader/Loading";
+import CustomerServices from "../../services/CustomerServices";
 
 const EmailVerification = ({ params }) => {
   const [success, setSuccess] = useState("");

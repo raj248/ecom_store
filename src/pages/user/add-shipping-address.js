@@ -2,11 +2,11 @@ import { useSearchParams } from "next/navigation";
 
 //internal imports
 import Dashboard from "./dashboard";
-import Error from "../components/form/Error";
-import { countries } from "../utils/countries";
-import InputArea from "../components/form/InputArea";
-import SelectOption from "../components/form/SelectOption";
-import useShippingAddressSubmit from "../hooks/useShippingAddressSubmit";
+import Error from "../../components/form/Error";
+import { countries } from "../../utils/countries";
+import InputArea from "../../components/form/InputArea";
+import SelectOption from "../../components/form/SelectOption";
+import useShippingAddressSubmit from "../../hooks/useShippingAddressSubmit";
 
 const AddShippingAddress = () => {
   const id = useSearchParams().get("id");

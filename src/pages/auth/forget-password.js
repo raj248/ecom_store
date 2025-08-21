@@ -3,11 +3,11 @@ import React from "react";
 import { FiMail } from "react-icons/fi";
 
 //internal import
-import Layout from "../layout/Layout";
-import Error from "../components/form/Error";
-import InputArea from "../components/form/InputArea";
-import useLoginSubmit from "../hooks/useLoginSubmit";
-import BottomNavigation from "../components/login/BottomNavigation";
+import Layout from "../../layout/Layout";
+import Error from "../../components/form/Error";
+import InputArea from "../../components/form/InputArea";
+import useLoginSubmit from "../../hooks/useLoginSubmit";
+import BottomNavigation from "../../components/login/BottomNavigation";
 
 const ForgetPassword = () => {
   const { handleSubmit, submitHandler, register, errors, loading } =

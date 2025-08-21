@@ -19,14 +19,14 @@ import { signOut } from "next-auth/react";
 import { useQuery } from "@tanstack/react-query";
 
 //internal import
-import Layout from "../layout/Layout";
-import Card from "../components/order-card/Card";
-import OrderServices from "../services/OrderServices";
-import RecentOrder from "../pages/user/recent-order";
-import { SidebarContext } from "../context/SidebarContext";
-import Loading from "../components/preloader/Loading";
-import useGetSetting from "../hooks/useGetSetting";
-import useUtilsFunction from "../hooks/useUtilsFunction";
+import Layout from "../../layout/Layout";
+import Card from "../../components/order-card/Card";
+import OrderServices from "../../services/OrderServices";
+import RecentOrder from "../../pages/user/recent-order";
+import { SidebarContext } from "../../context/SidebarContext";
+import Loading from "../../components/preloader/Loading";
+import useGetSetting from "../../hooks/useGetSetting";
+import useUtilsFunction from "../../hooks/useUtilsFunction";
 
 const Dashboard = ({ title, description, children }) => {
   const router = useRouter();
