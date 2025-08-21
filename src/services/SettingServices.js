@@ -3,7 +3,7 @@ import requests from "./httpServices";
 const SettingServices = {
   //store setting all function
   getStoreSetting: async () => {
-    return requests.get("/setting/store-setting/all");
+    return requests.get("/setting/store-setting");
   },
 
   getStoreSeoSetting: async () => {
@@ -11,7 +11,7 @@ const SettingServices = {
   },
   //store customization setting all function
   getStoreCustomizationSetting: async () => {
-    return requests.get("/setting/store/customization/all");
+    return requests.get("/setting/store/customization");
   },
 
   getShowingLanguage: async () => {
@@ -19,7 +19,7 @@ const SettingServices = {
   },
 
   getGlobalSetting: async () => {
-    return requests.get("/setting/global/all");
+    return requests.get("/setting/global");
   },
 };
 
