@@ -15,17 +15,17 @@ const useFilter = (data) => {
     //filter user order
     if (router.pathname === "/user/dashboard") {
       const orderPending = services?.filter(
-        (statusP) => statusP.status === "Pending"
+        (statusP) => statusP.status === "pending"
       );
       setPending(orderPending);
 
       const orderProcessing = services?.filter(
-        (statusO) => statusO.status === "Processing"
+        (statusO) => statusO.status === "processing"
       );
       setProcessing(orderProcessing);
 
       const orderDelivered = services?.filter(
-        (statusD) => statusD.status === "Delivered"
+        (statusD) => statusD.status === "delivered"
       );
       setDelivered(orderDelivered);
     }

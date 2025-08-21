@@ -19,22 +19,22 @@ const Invoice = ({ data, printRef, globalSetting, currency }) => {
             <h1 className="font-bold font-serif text-2xl uppercase">Invoice</h1>
             <h6 className="text-gray-700">
               Status :{" "}
-              {data.status === "Delivered" && (
+              {data.status === "delivered" && (
                 <span className="text-emerald-500">{data.status}</span>
               )}
               {data.status === "POS-Completed" && (
                 <span className="text-emerald-500">{data.status}</span>
               )}
-              {data.status === "Pending" && (
+              {data.status === "pending" && (
                 <span className="text-orange-500">{data.status}</span>
               )}
-              {data.status === "Cancel" && (
+              {data.status === "cancel" && (
                 <span className="text-red-500">{data.status}</span>
               )}
-              {data.status === "Processing" && (
+              {data.status === "processing" && (
                 <span className="text-indigo-500">{data.status}</span>
               )}
-              {data.status === "Deleted" && (
+              {data.status === "deleted" && (
                 <span className="text-red-700">{data.status}</span>
               )}
             </h6>

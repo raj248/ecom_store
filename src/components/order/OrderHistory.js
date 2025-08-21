@@ -19,16 +19,16 @@ const OrderHistory = ({ order, currency }) => {
         <span className="text-sm">{order.paymentMethod}</span>
       </td>
       <td className="px-5 py-3 leading-6 text-center whitespace-nowrap font-medium text-sm">
-        {order.status === "Delivered" && (
+        {order.status === "delivered" && (
           <span className="text-emerald-500">{order.status}</span>
         )}
-        {order.status === "Pending" && (
+        {order.status === "pending" && (
           <span className="text-orange-500">{order.status}</span>
         )}
-        {order.status === "Cancel" && (
+        {order.status === "cancel" && (
           <span className="text-red-500">{order.status}</span>
         )}
-        {order.status === "Processing" && (
+        {order.status === "processing" && (
           <span className="text-indigo-500">{order.status}</span>
         )}
       </td>
