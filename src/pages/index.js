@@ -96,7 +96,7 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
               </div>
             )}
 
-            <FetchCategoryProductsImagesOnly />
+            {/* <FetchCategoryProductsImagesOnly /> */}
             <FetchCategoryProducts />
 
             {/* Horizontal product sections */}

@@ -1,10 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
 import ProductServices from "../../services/ProductServices";
 import CategoryServices from "../../services/CategoryServices";
-import ProductCard from "./ProductCard";
+import Image from "next/image";
 import useUtilsFunction from "../../hooks/useUtilsFunction";
 
-const FetchCategoryProducts = () => {
+const FetchCategoryProductsRandomImage = () => {
   const { showingTranslateValue } = useUtilsFunction();
 
   // Fetch all categories
@@ -47,30 +47,39 @@ const FetchCategoryProducts = () => {
 
   return (
     <div className="flex flex-wrap justify-center gap-6">
-      {productsByCategory?.map(({ category, products }) => (
-        <div
-          key={category._id}
-          className="w-[280px] bg-gray-50 border rounded-lg shadow-sm p-4 flex-shrink-0"
-        >
-          <h2 className="text-md font-semibold mb-3 text-gray-800 text-center truncate">
-            {showingTranslateValue(category.name)}
-          </h2>
+      {productsByCategory?.map(({ category, products }) => {
+        const randomProduct =
+          products[Math.floor(Math.random() * products.length)];
 
-          {/* 2x2 small grid */}
-          <div className="grid grid-cols-2 gap-3">
-            {products?.map((product) => (
-              <div
-                key={product._id}
-                className="transform scale-95 hover:scale-100 transition"
-              >
-                <ProductCard product={product} />
+        return (
+          <div
+            key={category._id}
+            className="w-[280px] bg-gray-50 border rounded-lg shadow-sm flex-shrink-0"
+          >
+            <h2 className="text-md font-semibold mb-2 text-gray-800 text-center truncate p-2">
+              {showingTranslateValue(category.name)}
+            </h2>
+
+            {randomProduct && (
+              <div className="relative w-full aspect-[4/3]">
+                <Image
+                  src={
+                    randomProduct.image?.[0] ||
+                    "https://res.cloudinary.com/ahossain/image/upload/v1655097002/placeholder_kvepfp.png"
+                  }
+                  alt={showingTranslateValue(randomProduct.title)}
+                  fill
+                  style={{ objectFit: "contain" }}
+                  className="transition-transform duration-150 ease-in-out hover:scale-105"
+                  sizes="100%"
+                />
               </div>
-            ))}
+            )}
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 };
 
-export default FetchCategoryProducts;
+export default FetchCategoryProductsRandomImage;
