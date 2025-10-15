@@ -92,7 +92,7 @@ const ProductCard = ({ product, attributes }) => {
                 }}
                 sizes="100%"
                 alt="product"
-                className="object-contain transition duration-150 ease-linear transform group-hover:scale-105"
+                className="object-contain transition duration-150 ease-linear transform group-hover:scale-105 contrast-200"
               />
             )}
           </div>

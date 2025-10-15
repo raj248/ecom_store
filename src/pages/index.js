@@ -223,6 +223,45 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
                   </div>
                 </div>
               )}
+
+            {/* customer reviews */}
+            <div className="bg-gray-50 py-16">
+              <div className="mx-auto max-w-screen-2xl px-3 sm:px-10">
+                <div className="mb-10 text-center">
+                  <h2 className="text-xl lg:text-2xl mb-2 font-serif font-semibold">
+                    Customer Reviews
+                  </h2>
+                  <p className="text-base font-sans text-gray-600 leading-6">
+                    What our customers are saying
+                  </p>
+                </div>
+
+                <div className="flex space-x-4 overflow-x-auto pb-4">
+                  {[...Array(10)].map((_, i) => (
+                    <div
+                      key={i}
+                      className="flex-shrink-0 w-72 bg-white rounded-lg shadow p-4"
+                    >
+                      <div className="flex items-center mb-2">
+                        <div className="w-10 h-10 rounded-full bg-gray-300 mr-3"></div>
+                        <div>
+                          <h3 className="text-sm font-medium">John Doe</h3>
+                          <p className="text-xs text-gray-500">
+                            Verified Buyer
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-gray-600 text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque fringilla, nunc a tincidunt tincidunt, risus
+                        nulla malesuada magna, a ultricies lorem felis nec
+                        risus.
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </Layout>
       )}
