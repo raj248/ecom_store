@@ -46,7 +46,7 @@ const FetchCategoryProductsRandomImage = () => {
   if (catError || prodError) return <p>Error loading data</p>;
 
   return (
-    <div className="flex flex-wrap justify-center gap-6">
+    <div className="flex flex-wrap justify-center gap-8">
       {productsByCategory?.map(({ category, products }) => {
         const randomProduct =
           products[Math.floor(Math.random() * products.length)];
@@ -61,15 +61,20 @@ const FetchCategoryProductsRandomImage = () => {
             </h2>
 
             {randomProduct && (
-              <div className="relative w-full aspect-[4/3]">
+              <div className="w-full flex justify-center">
                 <Image
                   src={
                     randomProduct.image?.[0] ||
                     "https://res.cloudinary.com/ahossain/image/upload/v1655097002/placeholder_kvepfp.png"
                   }
                   alt={showingTranslateValue(randomProduct.title)}
-                  fill
-                  style={{ objectFit: "contain" }}
+                  width={0} // Next.js ignores width/height if using style
+                  height={0}
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    objectFit: "contain",
+                  }}
                   className="transition-transform duration-150 ease-in-out hover:scale-105"
                   sizes="100%"
                 />
