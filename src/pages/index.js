@@ -18,6 +18,7 @@ import AttributeServices from "../services/AttributeServices";
 import CMSkeleton from "../components/preloader/CMSkeleton";
 
 import FetchCategoryProducts from "../components/product/CategoryProductCard";
+import FetchCategoryProductsImagesOnly from "../components/product/CategoryProductGrid";
 
 const Home = ({ popularProducts, discountProducts, attributes }) => {
   const router = useRouter();
@@ -95,6 +96,7 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
               </div>
             )}
 
+            <FetchCategoryProductsImagesOnly />
             <FetchCategoryProducts />
 
             {/* Horizontal product sections */}
