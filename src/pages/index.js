@@ -92,6 +92,51 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
               </div>
             )}
 
+            {/* Horizontal product sections */}
+            {["Bestseller", "New Release"].map((section, idx) => (
+              <div key={idx} className="bg-gray-50 py-16">
+                <div className="mx-auto max-w-screen-2xl px-3 sm:px-10">
+                  <div className="mb-10 text-center">
+                    <h2 className="text-xl lg:text-2xl mb-2 font-serif font-semibold">
+                      {section}
+                    </h2>
+                    <p className="text-base font-sans text-gray-600 leading-6">
+                      Explore our {section.toLowerCase()} products
+                    </p>
+                  </div>
+
+                  <div className="flex space-x-4 overflow-x-auto pb-4">
+                    {loading ? (
+                      <CMSkeleton
+                        count={
+                          storeCustomizationSetting?.home
+                            ?.popular_product_limit || 10
+                        }
+                        height={200} // approximate height of a product card
+                        error={error}
+                        loading={loading}
+                      />
+                    ) : (
+                      popularProducts
+                        ?.slice(
+                          0,
+                          storeCustomizationSetting?.home?.popular_product_limit
+                        )
+                        .map((product, i) => (
+                          <div key={i} className="flex-shrink-0 w-60">
+                            <ProductCard
+                              key={product._id}
+                              product={product}
+                              attributes={attributes}
+                            />
+                          </div>
+                        ))
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+
             {/* popular products */}
             {storeCustomizationSetting?.home?.popular_products_status && (
               <div className="bg-gray-50 lg:py-16 py-10 mx-auto max-w-screen-2xl px-3 sm:px-10">
