@@ -47,7 +47,6 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
               <div className="mx-auto py-5 max-w-screen-2xl px-3 sm:px-10">
                 <div className="flex w-full min-h-0">
                   <div className="flex-shrink-0 xl:pr-6 lg:block w-full lg:w-3/5 h-full min-h-0">
-                    <FetchCategoryProducts />
                     <MainCarousel />
                   </div>
                   <div className="w-full hidden lg:flex h-full min-h-0">
@@ -95,6 +94,8 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
                 </div>
               </div>
             )}
+
+            <FetchCategoryProducts />
 
             {/* Horizontal product sections */}
             {["Bestseller", "New Release"].map((section, idx) => (
