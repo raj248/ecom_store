@@ -277,7 +277,7 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
               )}
 
             {/* customer reviews */}
-            <div className="bg-gray-50 py-16">
+            <div className="bg-gray-50 py-8">
               <div className="mx-auto max-w-screen-2xl px-3 sm:px-10">
                 <div className="mb-10 text-center">
                   <h2 className="text-xl lg:text-2xl mb-2 font-serif font-semibold">
