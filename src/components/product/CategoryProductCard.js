@@ -2,17 +2,10 @@ import { useQuery } from "@tanstack/react-query";
 import ProductServices from "../../services/ProductServices";
 import CategoryServices from "../../services/CategoryServices";
 import Image from "next/image";
-import useUtilsFunction from "../../hooks/useUtilsFunction";
 
-const FetchCategoryProductsRandomImage = () => {
-  const { showingTranslateValue } = useUtilsFunction();
-
+const HomeImages = () => {
   // Fetch all categories
-  const {
-    data: categories,
-    isLoading: catLoading,
-    error: catError,
-  } = useQuery({
+  const { data: categories } = useQuery({
     queryKey: ["categories"],
     queryFn: async () => await CategoryServices.getShowingCategory(),
   });
@@ -21,11 +14,7 @@ const FetchCategoryProductsRandomImage = () => {
   const first4Categories = categories?.[0]?.children?.slice(0, 4) || [];
 
   // Fetch products for those 4 categories
-  const {
-    data: productsByCategory,
-    isLoading: prodLoading,
-    error: prodError,
-  } = useQuery({
+  const { data: productsByCategory } = useQuery({
     queryKey: ["categoryProducts", first4Categories.map((c) => c._id)],
     queryFn: async () => {
       const results = await Promise.all(
@@ -33,8 +22,7 @@ const FetchCategoryProductsRandomImage = () => {
           const res = await ProductServices.getShowingStoreProducts({
             category: cat._id,
           });
-          // Limit to 4 products per category
-          return { category: cat, products: res.products?.slice(0, 4) };
+          return { products: res.products?.slice(0, 4) };
         })
       );
       return results;
@@ -42,44 +30,32 @@ const FetchCategoryProductsRandomImage = () => {
     enabled: first4Categories.length > 0,
   });
 
-  if (catLoading || prodLoading) return <p>Loading...</p>;
-  if (catError || prodError) return <p>Error loading data</p>;
+  if (!productsByCategory) return null;
 
   return (
-    <div className="flex flex-wrap justify-center gap-8">
-      {productsByCategory?.map(({ category, products }) => {
+    <div className="flex w-full">
+      {productsByCategory.slice(0, 4).map(({ products }, index) => {
         const randomProduct =
           products[Math.floor(Math.random() * products.length)];
 
         return (
-          <div
-            key={category._id}
-            className="w-[280px] bg-gray-50 border rounded-lg shadow-sm flex-shrink-0"
-          >
-            <h2 className="text-md font-semibold mb-2 text-gray-800 text-center truncate p-2">
-              {showingTranslateValue(category.name)}
-            </h2>
-
-            {randomProduct && (
-              <div className="w-full flex justify-center">
-                <Image
-                  src={
-                    randomProduct.image?.[0] ||
-                    "https://res.cloudinary.com/ahossain/image/upload/v1655097002/placeholder_kvepfp.png"
-                  }
-                  alt={showingTranslateValue(randomProduct.title)}
-                  width={0} // Next.js ignores width/height if using style
-                  height={0}
-                  style={{
-                    width: "100%",
-                    height: "auto",
-                    objectFit: "contain",
-                  }}
-                  className="transition-transform duration-150 ease-in-out hover:scale-105"
-                  sizes="100%"
-                />
-              </div>
-            )}
+          <div key={index} className="flex-1">
+            <Image
+              src={
+                randomProduct?.image?.[0] ||
+                "https://res.cloudinary.com/ahossain/image/upload/v1655097002/placeholder_kvepfp.png"
+              }
+              alt={randomProduct?.title || "product"}
+              width={0}
+              height={0}
+              sizes="25vw"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                display: "block",
+              }}
+            />
           </div>
         );
       })}
@@ -87,4 +63,4 @@ const FetchCategoryProductsRandomImage = () => {
   );
 };
 
-export default FetchCategoryProductsRandomImage;
+export default HomeImages;
