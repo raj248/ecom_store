@@ -16,6 +16,20 @@ module.exports = {
       height: {
         header: "560px",
       },
+      colors: {
+        emerald: {
+          50: "#fff1f3",
+          100: "#ffdce1",
+          200: "#ffb9c3",
+          300: "#ff879d",
+          400: "#f14f6d",
+          500: "#d22845", // ❤️ your central tone
+          600: "#b01f3a",
+          700: "#911a32",
+          800: "#73162a",
+          900: "#5d1323",
+        },
+      },
       backgroundImage: {
         "page-header": "url('/page-header-bg.jpg')",
         "contact-header": "url('/page-header-bg-2.jpg')",
